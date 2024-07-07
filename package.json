@@ -1,0 +1,24 @@
+{
+  "name": "ai-playground",
+  "version": "1.0.0",
+  "description": "ai playground",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brienjl/ai-playground.git"
+  },
+  "author": "jeremy l brien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brienjl/ai-playground/issues"
+  },
+  "homepage": "https://github.com/brienjl/ai-playground#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.52.3"
+  }
+}
