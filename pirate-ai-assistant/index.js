@@ -1,9 +1,8 @@
 import { rl, formatMessage } from "./models/chat.js"
 import { newMessage } from "./models/openai.js"
 
-/**
+/*
  * Recrusive function, initialize a chat session with the AI assistant
- * loads in 
  */
 // Define a function called chat
 const chat = () => {
