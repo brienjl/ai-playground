@@ -1,47 +1,49 @@
 # ai playground 🤖🧠
  
-Messing around with ai and chat-GiPiDi(Tee). Feel free to steal my code before co-pilot does. It's not production grade, but I am focusing on design patterns and spiking on interesting topics. Code is commented -- mostly for me. 
+Messing around with ai and chat-GiPiDi(Tee). Feel free to steal my code before co-pilot does. Repo is focused on exploring design patterns and spiking on interesting ai topics and use cases. Code is commented for reference. 
 
 ## roadmap
 Here's my roadmap. If I deep dive into anything, I'll cross-link those projects in the table of contents below. 
+* [x] [🧩 integrate openai sdk](./pirate-ai-assistant/models/openai.js)
+* [x] [🏴‍☠️ build a pirate ai assistant](./pirate-ai-assistant/index.js)
+* [_] 🔎 semantic search, langchain, and vector-dbs
+* [_] 📜 docQA
+* [_] 🎨 image generation with DALL*E Parton 👢
 
-* [x] [🏴‍☠️ Pirate AI Assistant](./pirate-ai-assistant/index.js)
+---
 
 ## table of contents
-- [Introduction](#introduction)
 - [Installation](#installation)
+    - [First Time Setup](#first-time-setup)
+    - [Pirate AI](#pirate-ai-assistant)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
-In this project, I aim to develop an AI playground where I can experiment with various AI algorithms and models. The goal is to learn different ai platforms and explore various use cases. 
-
-## Installation
+## installation
 To install and run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
-2. Navigate to the project directory: `cd your-repo`
+### first time setup
+1. Clone the repository
+2. Navigate to your local project directory: `cd your-repo`
 3. Install the dependencies: `npm install`
-4. Start the application: `npm start`
 
-## Usage
-Once the application is running, you can access it through your web browser at `http://localhost:3000`. Here are some key features and functionalities of the AI playground:
+This will install the following:
+* `openai sdk` - used to interact with openai
+* `dotenv` - so you can safely store your openai api key
 
-- Feature 1: [Describe feature 1]
-- Feature 2: [Describe feature 2]
-- Feature 3: [Describe feature 3]
+---
 
-Feel free to explore and experiment with different AI algorithms and models. Don't forget to share your findings and contribute to the project!
+### pirate ai assistant
+1. Navigate to the folder pirate-ai-assistant: `cd ./pirate-ai-assitant`
+2. Create a file called `.env`
+3. Save your api key in the .env file `OPENAI_API_KEY='your-api-key-here'`
+4. Open the terminal/command line from the file location listed in step 1
+5. Start the ai assitant with `node index.js`
+6. `exit` to end your session
 
-## Contributing
-Contributions are welcome! If you would like to contribute to this project, please follow these guidelines:
-
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature/your-feature`
-3. Make your changes and commit them: `git commit -m 'Add your feature'`
-4. Push to the branch: `git push origin feature/your-feature`
-5. Submit a pull request
-
-## License
-This project is licensed under the [MIT License](LICENSE).
+#### Developer Notes
+There are three files of interest
+* `models/chat.js` - model for UI via the terminal and formats user input as a formatted message
+* `models/openai.js` - model for openai sdk and returns messages from the ai
+* `/index.js` - initializes a chat session via a recursive function and saves chat history to maintain the ai's memory during the session. Also contains the initial instructions to make it a pirate... arrrggggg! 
