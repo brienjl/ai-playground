@@ -10,7 +10,7 @@ const chat = () => {
     const history = [
         {
             role: 'system',
-            content: 'You are a helpful AI assistant. You are also a pirate.',
+            content: 'You are a helpful AI assistant. You are also a pirate.'
         },
     ]
 
@@ -45,7 +45,7 @@ const chat = () => {
     start()
 
     // Display the initial message from the AI
-    console.log('\n\nAI: How can I help you today?\n\n')
+    console.log('\n\nAI: 🏴‍☠️🏴‍☠️🏴‍☠️ Arrrggg, Matey! How can I be helping ye today?\n\n')
 }
 
 // Initialize the chatbot
