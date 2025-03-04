@@ -6,7 +6,7 @@ Messing around with ai and chat-GiPiDi(Tee). Feel free to steal my code before c
 Here's my roadmap. If I deep dive into anything, I'll cross-link those projects in the table of contents below. 
 * [x] [🧩 integrate openai sdk](./pirate-ai-assistant/models/openai.js)
 * [x] [🏴‍☠️ build a pirate ai assistant](./pirate-ai-assistant/index.js)
-* [_] 🔎 semantic search, langchain, and vector-dbs
+* [x] 🔎 semantic search, langchain, and vector-dbs
 * [_] 📜 docQA
 * [_] 🎨 image generation with DALL*E Parton 👢
 
@@ -31,16 +31,17 @@ To install and run this project locally, follow these steps:
 This will install the following:
 * `openai sdk` - used to interact with openai
 * `dotenv` - so you can safely store your openai api key
+* `langchain` - for performing semantic search
 
 ---
 
 ### pirate ai assistant
-1. Navigate to the folder pirate-ai-assistant: `cd ./pirate-ai-assitant`
+1. Navigate to the project folder. EXAMPLE: pirate-ai-assistant: `cd ./pirate-ai-assitant`
 2. Create a file called `.env`
 3. Save your api key in the .env file `OPENAI_API_KEY='your-api-key-here'`
 4. Open the terminal/command line from the file location listed in step 1
 5. Start the ai assitant with `node index.js`
-6. `exit` to end your session
+6. `exit` to end your session or `ctrl+c`
 
 #### Developer Notes
 There are three files of interest

@@ -19,6 +19,7 @@
   "homepage": "https://github.com/brienjl/ai-playground#readme",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "langchain": "^0.0.170",
     "openai": "^4.52.3"
   }
 }
